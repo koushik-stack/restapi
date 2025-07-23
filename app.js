@@ -20,7 +20,7 @@ app.use('/api/v1/users', userRouter);
 app.use(
     '*',
     catchAsync(async (req, res, next) => {
-        throw new AppError(`Can't find ${req.originalUrl} on this server`, 404);
+        throw new AppError(`Can't find ${req.originalUrl} on this server`, 405);
     })
 );
 
