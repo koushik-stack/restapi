@@ -8,7 +8,8 @@ module.exports = {
             {
                 userType: '0',
                 firstName: 'Alex',
-                lastName: 'Joe',
+                lastName: 'Jones',
+                lastName: 'ad',
                 email: process.env.ADMIN_EMAIL,
                 password: hashPassword,
                 createdAt: new Date(),
