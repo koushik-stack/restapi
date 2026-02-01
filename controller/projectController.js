@@ -41,7 +41,7 @@ const getProjectById = catchAsync(async (req, res, next) => {
     const projectId = req.params.id;
     const result = await project.findByPk(projectId, { include: user });
     if (!result) {
-        return next(new AppError('Invalid project id', 400));
+        return next(new AppError('Invalid project id', 404));
     }
     return res.json({
         status: 'success',
