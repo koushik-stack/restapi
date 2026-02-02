@@ -109,11 +109,7 @@ const restrictTo = (...userType) => {
                 )
             );
         }
-        return next(
-            new AppError(
-                "try again 504"
-            )
-        );
+        return next();
     };
 
     return checkPermission;
