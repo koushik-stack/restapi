@@ -20,10 +20,10 @@ const user = sequelize.define(
             allowNull: false,
             validate: {
                 notNull: {
-                    msg: 'firstName cannot be null',
+                    msg: 'userType cannot be null',
                 },
                 notEmpty: {
-                    msg: 'firstName cannot be empty',
+                    msg: 'userType cannot be empty',
                 },
             },
         },
